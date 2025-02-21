@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="student"
+            type="vn.bkas.classman.ui.students.Students" />
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical"
+        android:id="@+id/rootView">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/black"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/profile_pic"
+            android:imageUrl="@{student.imageAvatarId}"
+            />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/profile_name"
+                android:layout_alignParentTop="true"
+                android:text="@{student.studentName}"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:textSize="13sp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/profile_name"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="@{student.studentEmail}"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</layout>

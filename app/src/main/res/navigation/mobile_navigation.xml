@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_lectures">
+
+    <fragment
+        android:id="@+id/nav_lectures"
+        android:name="vn.bkas.classman.ui.lectures.LecturesFragment"
+        android:label="@string/menu_lectures"
+        tools:layout="@layout/fragment_lectures" />
+
+    <fragment
+        android:id="@+id/nav_students"
+        android:name="vn.bkas.classman.ui.students.StudentsFragment"
+        android:label="@string/menu_students"
+        tools:layout="@layout/fragment_students" />
+
+    <fragment
+        android:id="@+id/nav_exercises"
+        android:name="vn.bkas.classman.ui.exercises.ExercisesFragment"
+        android:label="@string/menu_exercises"
+        tools:layout="@layout/fragment_exercises" />
+
+    <fragment
+        android:id="@+id/nav_classroom"
+        android:name="vn.bkas.classman.ui.classroom.ClassroomFragment"
+        android:label="@string/menu_class"
+        tools:layout="@layout/fragment_classroom" />
+</navigation>

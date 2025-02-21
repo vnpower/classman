@@ -1,0 +1,77 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'vn.bkas.classman'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "vn.bkas.classman"
+        minSdk 34
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libs.twelvemonkeys.imageio
+    implementation libs.twelvemonkeys.servlet
+    implementation libs.twelvemonkeys
+    implementation libs.twelvemonkeys.parent
+
+    //implementation libs.stax.api
+    def room_version = "2.6.1"
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    implementation libs.lifecycle.livedata.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.circleimageview
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation 'org.apache.poi:poi:5.2.3' // Or the latest version
+    implementation 'org.apache.poi:poi-ooxml:5.2.3' // For .xlsx files
+    implementation 'org.apache.xmlbeans:xmlbeans:5.1.1' // Required by poi-ooxml
+    implementation 'commons-collections:commons-collections:3.2.2' // Required by poi
+    implementation 'commons-codec:commons-codec:1.15' // Required by poi
+    implementation 'com.zaxxer:SparseBitSet:1.2' // Required by poi
+    implementation 'org.apache.commons:commons-math3:3.6.1' // Required by poi
+
+    //implementation 'com.twelvemonkeys.imageio:3.12.0'
+    //implementation libs.android.tiffbitmapfactory
+
+    //implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+}

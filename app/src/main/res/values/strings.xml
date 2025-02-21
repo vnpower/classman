@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">classman</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Quản lý lớp học</string>
+    <string name="nav_header_subtitle">Môn học: Lý thuyết mạch</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_lectures">Bài giảng</string>
+    <string name="menu_students">Sinh viên</string>
+    <string name="menu_exercises">Bài tập</string>
+    <string name="menu_class">Lớp học</string>
+
+    <string-array name="studentNames">
+        <item> Person 1 </item>
+        <item> Person 2 </item>
+        <item> Person 3 </item>
+        <item> Person 4 </item>
+        <item> Person 5 </item>
+        <item> Person 6 </item>
+        <item> Person 7 </item>
+    </string-array>
+
+    <string-array name="studentEmails">
+        <item> email-1 </item>
+        <item> email-2 </item>
+        <item> email-3 </item>
+        <item> email-4 </item>
+        <item> email-5 </item>
+        <item> email-6 </item>
+        <item> email-7 </item>
+    </string-array>
+
+    <string-array name="exerciseCodes">
+        <item> 2.1 </item>
+        <item> 3.1 </item>
+        <item> 3.2 </item>
+    </string-array>
+    
+    <string-array name="exerciseElementsCount">
+        <item> 8 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+    </string-array>
+
+    <string-array name="exerciseEquationCount">
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 5 </item>
+    </string-array>
+
+    <string-array name="exerciseNotes">
+        <item> Mạch có hai cửa </item>
+        <item> Mạch phi tuyến </item>
+        <item> Mạch tuyến tính có nguồn phụ thuộc </item>
+    </string-array>
+
+</resources>
